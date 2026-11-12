@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><script src="/assets/i18n.js"></script><script src="/play/i18n_play.js"></script><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mint · Agent World</title><meta name="description" content="Mint Agent World heroes on BNB Chain."><meta name="theme-color" content="#05060d"><meta name="robots" content="noindex">
+<link rel="icon" href="/assets/img/o01.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Orbitron:wght@700;900&display=swap"><link rel="stylesheet" href="/assets/site.css"><link rel="stylesheet" href="/play/play.css">
+<meta property="og:title" content="Mint · Agent World"><meta property="og:image" content="https://agentworld-emo.pages.dev/assets/img/og.jpg"></head><body>
+<header class="top"><a class="logo disp" href="/"><i></i><span>Agent World</span></a><nav><a class="hide" href="/#features">Game</a><a class=" on" href="/play/">Play</a><a class="" href="/gear/">Gear</a><a class="" href="/collection/">Codex</a><a class="" href="/guide/">Guide</a><a class="" href="https://x.com/AgentWorldBNB" target=_blank rel=noopener>X</a></nav></header>
+<section class="hero ph"><div class="ring"></div><span class="eyebrow"><b></b>10,000 heroes · BNB Chain</span><h1 class="disp">Mint</h1><p class="sub">Mint price, per-transaction limit and supply are read live from the Robots contract.</p><div class="row"><img src="/guide/img/r20.png" alt="Hero" loading="lazy" decoding="async"><img src="/guide/img/o02.png" alt="Hero" loading="lazy" decoding="async"><img src="/guide/img/o09.png" alt="Hero" loading="lazy" decoding="async"><img src="/guide/img/f05.png" alt="Hero" loading="lazy" decoding="async"><img src="/guide/img/r15.png" alt="Hero" loading="lazy" decoding="async"></div></section>
+<nav class="ptabs" aria-label="Play"><a class="" href="/play/"><i>◈</i>Overview</a><a class="on" href="/play/mint/"><i>✦</i>Mint</a><a class="" href="/play/heroes/"><i>◆</i>Heroes</a><a class="" href="/play/boxes/"><i>▣</i>Blind Boxes</a><a class="" href="/play/arena/"><i>⚔</i>Arena</a><a class="" href="/play/forge/"><i>♨</i>Forge</a><a class="" href="/play/lottery/"><i>✪</i>Lottery</a><a class="" href="/play/wallet/"><i>◎</i>Wallet</a></nav>
+<div class="wrap"><div class="wbar" id="wbar"><div class="who"><span class="dot"></span><code id="w-addr">Not connected</code><span class="chip" id="w-mode">Connect to play</span><span class="bal" id="w-bal"></span></div><button class="btn g sm" id="w-btn">Connect Wallet</button></div>
+
+<div class="banner rv" id="m-state"><b>CHECKING STATUS…</b><span></span></div>
+<section class="s" style="padding-top:34px"><div class="pg2">
+<div class="panel card rv"><span class="tag">Paid mint</span><h3>Mint heroes</h3><p>Any wallet can mint. Excess payment is refunded by the contract.</p>
+<div class="kv"><span>Price per hero</span><b class="gd" id="m-price">–</b><span>Max per transaction</span><b id="m-max">–</b><span>Minted</span><b id="m-sup">–</b></div>
+<div class="bar"><i id="m-barf" style="width:0"></i></div>
+<div class="qty"><button type="button" id="qm">−</button><input id="q" value="1" inputmode="numeric" aria-label="Quantity"><button type="button" id="qp">+</button></div>
+<div class="big" id="m-total">–<small>BNB</small></div><div class="cta" style="justify-content:flex-start"><button class="btn g" id="m-go">Mint</button></div></div>
+<div class="panel card rv"><span class="tag">Agent ID</span><h3>Free mint</h3><p>One mint per Agent ID for a small fee that covers VRF and gas.</p>
+<div class="kv"><span>Fee</span><b class="gd" id="f-fee">–</b><span>Your Agent ID</span><b id="f-agent">–</b><span>Status</span><b id="f-used">–</b></div>
+<div class="cta" style="justify-content:flex-start"><button class="btn c" id="f-go">Claim free mint</button></div>
+<hr style="border:0;border-top:1px solid var(--line);margin:22px 0 12px"><span class="tag">Giveaway</span><h3>Gift credits</h3>
+<div class="kv"><span>Your credits</span><b id="g-cred">–</b></div><div class="cta" style="justify-content:flex-start"><button class="btn o sm" id="g-go">Use 1 credit</button></div></div>
+</div></section>
+<section class="s"><div class="pg2"><div class="panel card rv"><span class="tag">Whitelist</span><h3>Whitelist mint</h3><p>Campaign proofs are published when a whitelist opens. Paste your allocation and proof.</p>
+<div class="kv"><span>Campaign</span><b id="w-camp">–</b><span>Fee per hero</span><b class="gd" id="w-fee">–</b><span>Claimed (global)</span><b id="w-sup">–</b></div>
+<label class="lbl">Quantity</label><input class="inp" id="w-q" value="1"><label class="lbl">Allocation</label><input class="inp" id="w-a" placeholder="e.g. 5"><label class="lbl">Proof (JSON array of bytes32)</label><textarea class="inp" id="w-p" placeholder='["0x…"]'></textarea>
+<div class="cta" style="justify-content:flex-start"><button class="btn o sm" id="w-go">Claim whitelist</button></div></div>
+<div class="panel card rv"><span class="tag">Reveal</span><h3>Reveal status</h3><p>Paid and free mints show as unrevealed until the Chainlink VRF reveal. Official and special heroes show immediately.</p>
+<div class="kv"><span>Reveal committed</span><b id="r-c">–</b><span>Revealed</span><b id="r-r">–</b></div><div class="hgrid" style="grid-template-columns:repeat(3,1fr);margin-top:16px" id="r-demo"></div></div></div></section>
+</div>
+<footer>© Agent World · Hero NFT battles on BNB Chain<br><a href="/play/">Play</a><a href="/gear/">Gear</a><a href="/collection/">Codex</a><a href="/guide/">Guide</a><a href="https://x.com/AgentWorldBNB" target="_blank" rel="noopener">X @AgentWorldBNB</a></footer>
+<script src="/collection/ethers.umd.min.js"></script><script src="/play/common.js"></script><script src="/play/mint.js"></script></body></html>

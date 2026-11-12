@@ -1,0 +1,20 @@
+{
+ "robots": "0xe031a1e4dC15a9A82dcc92d9790cCE1886DAe917",
+ "gear": "0x973cA6565b180b61Df8Dd5B99d23003826e1Edbb",
+ "arena": "0x8E012C278E0B459be3477c5b585F0DFDB2977c74",
+ "forge": "0xe00A297fbe2A3175de61Eb1A0412e980211FB690",
+ "lottery": "0x3B536FaEc3B06C93174CC1f57324BD29016c6EBd",
+ "raffle": "0x485066CA88b10150036334929DFAc68706B38E83",
+ "randomness": "0xA9164391CE2040903bb5992D4436371818bD61cb",
+ "arenaRandomness": "0xf3EbA3CB81756a5131e11314224dAC346599714B",
+ "eligibility": "0xEBdcCB8B2ae60ff3907E3D21AFAd8137FD35cd64",
+ "tierTable": "0x56E944a7FC26009750d13947325872767FEE71AB",
+ "rpc": "https://bsc-testnet-rpc.publicnode.com",
+ "chainId": 97,
+ "cutover": {
+  "writesEnabled": true,
+  "verified": true,
+  "source": "74737d45724bcf1a71c47e44595c87786ef49c8b",
+  "accept": "TESTNET COPY ONLY (chain 97). Enabled only when bytecode_verify.json all MATCH."
+ }
+}
